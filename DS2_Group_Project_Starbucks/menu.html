@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Drive-Thru Kiosk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kiosk">
+     <div class="heads">
+        <img src="logo.png" class="logo">
+        <h4>Welcome to Starbucks Drive-thru!</h4>
+    </div>
+        <!-- Scrollable Menu Section -->
+    <div class="main">
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="espresso.png" alt="Item 1">
+                <p>Espresso</p>
+            </div>
+            <div class="menu-item">
+                <img src="icedshakenespresso.png" alt="Item 2">
+                <p>Iced Shaken Espresso</p>
+            </div>
+            <div class="menu-item">
+                <img src="cappuccino.png" alt="Item 3">
+                <p>Cappuccino</p>
+            </div>
+            <div class="menu-item">
+                <img src="latte.png" alt="Item 4">
+                <p>Café Latte</p>
+            </div>
+            <div class="menu-item">
+                <img src="flatwhite.png" alt="Item 5">
+                <p>Flat White</p>
+            </div>
+            <div class="menu-item">
+                <img src="machiato.png" alt="Item 6">
+                <p>Café Macchiato</p>
+            </div>
+            <div class="menu-item">
+                <img src="caramelmacchiato.png" alt="Item 6">
+                <p>Caramel Macchiato</p>
+            </div>
+            <div class="menu-item">
+                <img src="americano.png" alt="Item 7">
+                <p>Café Americano</p>
+            </div>
+            <div class="menu-item">
+                <img src="frappuccino.png" alt="Item 8">
+                <p>Frappuccino</p>
+            </div>
+            <div class="menu-item">
+                <img src="mocha.png" alt="Item 9">
+                <p>Café Mocha</p>
+            </div>
+            <div class="menu-item">
+                <img src="tea.png" alt="Item 10">
+                <p>Tea</p>
+            </div>
+            <div class="menu-item">
+                <img src="hotchoc.png" alt="Item 6">
+                <p>Hot Chocolate</p>
+            </div>
+            <!-- Repeat for each menu item -->
+        </div>
+        
+
+        <!-- Voice Order Section -->
+        <div class="voice-order">
+            <p>Please order by pressing and holding the button</p>
+            <button id="micButton" class="mic-button">
+                <img src="microphone (1).png" alt="Microphone">
+            </button>
+           
+            <div id="transcript">Order Summary</div>
+            <button id="Checkout" class="checkout" onclick="location.href='checkout.html'">Checkout
+            </button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

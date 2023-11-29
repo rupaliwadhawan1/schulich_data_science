@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Drive-Thru Kiosk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class="kiosk">
+     
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Description" class="logo">
+        <h4>Welcome to Starbucks Drive-thru!</h4>
+  
+        <!-- Scrollable Menu Section -->
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/espresso.png') }}" alt="Description">
+                <p>Espresso</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/icedshakenespresso.png') }}" alt="Description">
+                <p>Iced Shaken Espresso</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/cappuccino.png') }}" alt="Description">
+
+                <p>Cappuccino</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/latte.png') }}" alt="Description">
+
+                <p>Café Latte</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/flatwhite.png') }}" alt="Description">
+
+                <p>Flat White</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/machiato.png') }}" alt="Description">
+
+                <p>Café Macchiato</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/caramelmacchiato.png') }}" alt="Description">
+
+                <p>Caramel Macchiato</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/americano.png') }}" alt="Description">
+
+                <p>Café Americano</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/frappuccino.png') }}" alt="Description">
+
+                <p>Frappuccino</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/mocha.png') }}" alt="Description">
+
+                <p>Café Mocha</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/tea.png') }}" alt="Description">
+
+                <p>Tea</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ url_for('static', filename='images/hotchoc.png') }}" alt="Description">
+
+                <p>Hot Chocolate</p>
+            </div>
+            <!-- Repeat for each menu item -->
+        </div>
+        
+
+        <!-- Voice Order Section -->
+        <div class="voice-order">
+            <p>Please order by pressing and holding the button</p>
+            <button id="micButton" class="mic-button">
+                <img src="{{ url_for('static', filename='images/microphone (1).png') }}" alt="Description">
+
+            </button>
+            
+            <div id="voiceResponse"></div>
+
+           
+            <div id="transcript">Order Summary</div>
+            <button id="Checkout" class="checkout">Checkout
+            </button>
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: 'SoDo Sans';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.heads {
+    background-color: #006439;
+    color: #fff;
+}
+
+
+.logo {
+    margin-top: 30px;
+    height: 100px;
+    width: 100px;
+}
+
+
+.kiosk {
+    margin-top: 100px;
+    overflow-y: auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add your original dimensions */
+    width: 800px; /* example width */
+}
+
+
+.menu-grid {
+    padding: 20px;
+    max-height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+
+.mic-button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #006439;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.mic-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.checkout{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #006439;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+@keyframes listening {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.listening {
+    animation: listening 1s infinite;
+}
+
+#transcript {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.menu-grid {
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    overflow-y: auto; /* make only the grid scrollable */
+    max-height: 400px; /* adjust this height to fit within your container */
+    margin: auto; /* for centering the grid if needed */
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 230px;
+    height: 230px;
+
+    border-radius: 10px;
+}
+
+
+
+.menu-item p {
+    margin-top: 10px; /* space between image and text */
+}
+
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 100, 0, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 10px rgba(0, 100, 0, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 100, 0, 0);
+    }
+}
+
+.recording {
+    animation: pulse 2s infinite;
+}
